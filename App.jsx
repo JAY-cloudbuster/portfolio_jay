@@ -46,15 +46,19 @@ const Intro = () => (
 const About = () => (
   <Section id="about">
     <h2>About Me</h2>
-    <p>I'm a B.Tech Computer Science student at Amrita Vishwa Vidyapeeth...</p>
+    <p>
+      I'm a B.Tech Computer Science student at Amrita Vishwa Vidyapeeth. My interests lie in application and web development, machine learning, and data analysis.
+      I bring a strong foundation in core programming, combined with practical experience in data science through internships and personal projects.
+      I'm also passionate about entrepreneurship and maintain an active lifestyle with interests in basketball, sprinting, and swimming.
+    </p>
   </Section>
 );
 
 const projectsData = [
-  { title: 'Hate Speech Detection', desc: 'LSTM-based NLP model...', github: 'https://github.com/jaymadman/hate-speech-detection' },
-  { title: 'Heart health and Mortality Prediction', desc: 'Deep learning model...', github: 'https://github.com/jaymadman/heart-mortality-prediction' },
-  { title: 'Credit EDA Prediction', desc: 'Credit scoring model...', github: 'https://github.com/jaymadman/credit-EDA' },
-  { title: 'BuyThem | Smart Marketplace', desc: 'Product browsing platform...', github: 'https://github.com/jaymadman/sellthem-marketplace', live: 'https://jay-cloudbuster.github.io/sell-them_jay/' }
+  { title: 'Hate Speech Detection', desc: 'LSTM-based NLP model to detect hate and offensive speech in tweets.', github: 'https://github.com/jaymadman/hate-speech-detection' },
+  { title: 'Heart health and Mortality Prediction', desc: 'Deep learning model using clinical data to predict heart failure risk.', github: 'https://github.com/jaymadman/heart-mortality-prediction' },
+  { title: 'Credit EDA Prediction', desc: 'Credit scoring model analyzing customer and loan history data.', github: 'https://github.com/jaymadman/credit-EDA' },
+  { title: 'BuyThem | Smart Marketplace', desc: 'Clean platform for browsing and buying products.', github: 'https://github.com/jaymadman/sellthem-marketplace', live: 'https://jay-cloudbuster.github.io/sell-them_jay/' }
 ];
 
 const Projects = () => (
@@ -87,9 +91,25 @@ const Skills = () => (
 const Resume = () => (
   <Section id="resume">
     <h2>Resume</h2>
-    <p><strong>Education:</strong><br />B.Tech in Computer Science...</p>
-    <p><strong>Work Experience:</strong><br /><em>Data Science Intern – Personifwy...</em></p>
-    <p><strong>Achievements & Interests:</strong><br />Black belt in Karate 🥋...</p>
+
+    <p>
+      <strong>Education:</strong><br />
+      B.Tech in Computer Science, Amrita Vishwa Vidyapeeth (2023 – present)<br />
+      Relevant Courses: OOP, Data Structures, Data Science, Machine Learning, Web Development
+    </p>
+
+    <p>
+      <strong>Work Experience:</strong><br />
+      <em>Data Science Intern – Personifwy, Bangalore (Mar 2025 - Jun 2025)</em><br />
+      • ML, Data Analysis, Python<br />
+      • Internship certificates on LinkedIn
+    </p>
+
+    <p>
+      <strong>Achievements & Interests:</strong><br />
+      Black belt in Karate 🥋, NSS student coordinator, ACE club member, Web Dev, ML, Data Analysis
+    </p>
+
     <a className="resume-btn" href="assets/jay_resume[1].pdf" download>📄 Download Full Resume</a>
   </Section>
 );
