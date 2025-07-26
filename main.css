@@ -195,3 +195,25 @@ main {
     font-size: clamp(1.25rem, 4vw, 1.75rem);
   }
 }
+/* ... existing styles above this remain unchanged ... */
+
+/* Project Card Buttons */
+.project-links {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.project-links .btn {
+  background: #18BC9C;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+.project-links .btn:hover {
+  background: #1ABC9C;
+}
+
+/* (rest of your CSS remains the same from the previous file) */
+
