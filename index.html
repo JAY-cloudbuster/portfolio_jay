@@ -6,139 +6,15 @@
   <title>Jayesh Rao - Portfolio</title>
   <link rel="stylesheet" href="main.css" />
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Open+Sans&display=swap" rel="stylesheet">
+
+  <!-- React and Babel CDN -->
+  <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 </head>
-<body class="dark-mode">
+<body>
+  <div id="root"></div>
 
-  <header>
-    <nav class="navbar">
-      <h1 class="logo">Kalla Jayesh Rao</h1>
-      <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#resume">Resume</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <main>
-    <section id="intro" class="hero-section">
-      <div class="hero-content">
-        <img src="Jay_nobackground_2.jpg" alt="Jayesh Rao" class="profile-pic">
-        <h1>Kalla Jayesh Rao</h1>
-        <p>Web Developer | ML Enthusiast | Data Explorer</p>
-      </div>
-    </section>
-
-    <section id="about">
-      <h2>About Me</h2>
-      <p>
-        I'm a B.Tech Computer Science student at Amrita Vishwa Vidyapeeth. My interests lie in application and web development, machine learning, and data analysis.
-        I bring a strong foundation in core programming, combined with practical experience in data science through internships and personal projects.
-        I'm also passionate about entrepreneurship and maintain an active lifestyle with interests in basketball, sprinting, and swimming.
-      </p>
-    </section>
-
-    <section id="projects">
-      <h2>Projects</h2>
-      <div class="projects-container">
-        <div class="project-card">
-          <h3>Hate Speech Detection</h3>
-          <p>
-            Developed an LSTM-based NLP model to detect hate and offensive speech in tweets. The model captures contextual meaning for improved detection accuracy over traditional methods.
-          </p>
-          <div class="project-links">
-            <a href="https://github.com/jaymadman/hate-speech-detection" target="_blank">GitHub</a>
-          </div>
-        </div>
-
-        <div class="project-card">
-          <h3>Heart health and Mortality Prediction</h3>
-          <p>
-            Built a deep learning model using clinical data to predict heart failure risk. The model uses multiple clinical features to provide accurate early intervention predictions.
-          </p>
-          <div class="project-links">
-            <a href="https://github.com/jaymadman/heart-mortality-prediction" target="_blank">GitHub</a>
-          </div>
-        </div>
-
-        <div class="project-card">
-          <h3>Credit EDA Prediction</h3>
-          <p>
-            Created a credit scoring model by analyzing customer and loan history data. Integrated engineered features and historical patterns for better credit risk predictions.
-          </p>
-          <div class="project-links">
-            <a href="https://github.com/jaymadman/credit-EDA" target="_blank">GitHub</a>
-          </div>
-        </div>
-
-        <div class="project-card">
-          <h3>BuyThem | Smart Marketplace</h3>
-          <p>
-            BuyThem is a clean and user-friendly platform designed for browsing and buying products.
-            Built for users to experience the ease of shopping!
-          </p>
-          <div class="project-links">
-            <a href="https://jay-cloudbuster.github.io/sell-them_jay/" target="_blank">Live Demo</a>
-            <a href="https://github.com/jaymadman/sellthem-marketplace" target="_blank">GitHub</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="skills">
-      <h2>Skills</h2>
-      <ul class="skills-list">
-        <li>Python</li>
-        <li>C</li>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>Java</li>
-        <li>JavaScript</li>
-        <li>Node.js</li>
-        <li>MySQL</li>
-        <li>GitHub</li>
-      </ul>
-    </section>
-
-    <section id="resume">
-      <h2>Resume</h2>
-      <p>
-        <strong>Education:</strong><br>
-        B.Tech in Computer Science, Amrita Vishwa Vidyapeeth (2023 – present)<br>
-        Relevant Courses: OOP, Data Structures, Data Science, Machine Learning, Web Development
-      </p>
-
-      <p>
-        <strong>Work Experience:</strong><br>
-        <em>Data Science Intern – Personifwy, Bangalore (Mar 2025 - Jun 2025)</em><br>
-        • ML, Data Analysis, Python<br>
-        • Internship certificates on LinkedIn
-      </p>
-
-      <p>
-        <strong>Achievements & Interests:</strong><br>
-        Black belt in Karate 🥋, NSS student coordinator, ACE club member, Web Dev, ML, Data Analysis
-      </p>
-
-      <a class="resume-btn" href="assets/jay_resume[1].pdf" download>📄 Download Full Resume</a>
-    </section>
-
-    <section id="contact">
-      <h2>Contact Me</h2>
-      <div class="contact-links">
-        <a href="https://www.linkedin.com/in/jayesh-rao-kalla-b3a75929a/" target="_blank" class="contact-btn">LinkedIn</a>
-        <a href="https://github.com/jaymadman" target="_blank" class="contact-btn">GitHub</a>
-        <a href="mailto:kjayeshrao@gmail.com" class="contact-btn">Gmail</a>
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <p>&copy; 2025 Jayesh Rao. All rights reserved.</p>
-  </footer>
-
-  <script src="main.js"></script>
+  <script type="text/babel" src="App.jsx"></script>
 </body>
 </html>
