@@ -83,7 +83,9 @@ const Projects = () => (
           <h3>{p.title}</h3>
           <p>{p.desc}</p>
           <div className="project-links">
-            {p.live && <a href={p.live} target="_blank" className="btn">Live Demo</a>}
+            {p.live && (
+              <a href={p.live} target="_blank" className="btn">Live Demo</a>
+            )}
             <a href={p.github} target="_blank" className="btn">GitHub</a>
           </div>
         </div>
