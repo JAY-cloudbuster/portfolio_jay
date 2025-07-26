@@ -6,8 +6,11 @@
 }
 body {
   font-family: 'Open Sans', sans-serif;
-  background: #141414;
+  background: url('background.jpg') no-repeat center center fixed;
+  background-size: cover;
   color: #ECF0F1;
+  position: relative;
+  z-index: 0;
 }
 h1, h2 {
   font-family: 'Montserrat', sans-serif;
@@ -208,3 +211,11 @@ main {
     font-size: clamp(1.25rem, 4vw, 1.75rem);
   }
 }
+body::before {
+  content: "";
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.5); /* dark overlay */
+  z-index: -1;
+}
+
