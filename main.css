@@ -1,25 +1,22 @@
+/* Base Styles */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
 body {
   font-family: 'Open Sans', sans-serif;
   background: #141414;
   color: #ECF0F1;
 }
-
 h1, h2 {
   font-family: 'Montserrat', sans-serif;
   color: #18BC9C;
 }
-
 a {
   text-decoration: none;
   color: inherit;
 }
-
 main {
   padding-top: 70px;
 }
@@ -71,7 +68,7 @@ main {
   }
 }
 
-/* Section Styles */
+/* Sections */
 .glass-section {
   margin: 2rem auto;
   padding: 2rem;
@@ -81,7 +78,6 @@ main {
   border-radius: 16px;
   border: 1px solid rgba(255, 255, 255, 0.1);
 }
-
 .glass-section p,
 .glass-section li {
   white-space: normal;
@@ -125,6 +121,23 @@ main {
   margin-bottom: 0.5rem;
   color: #18BC9C;
 }
+.project-links {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
+.project-links .btn {
+  background: #18BC9C;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+.project-links .btn:hover {
+  background: #1ABC9C;
+}
 
 /* Skills */
 .skills-list {
@@ -142,7 +155,7 @@ main {
   color: white;
 }
 
-/* Resume */
+/* Resume Button */
 .resume-btn {
   display: inline-block;
   margin-top: 1rem;
@@ -195,25 +208,3 @@ main {
     font-size: clamp(1.25rem, 4vw, 1.75rem);
   }
 }
-/* ... existing styles above this remain unchanged ... */
-
-/* Project Card Buttons */
-.project-links {
-  display: flex;
-  gap: 1rem;
-  margin-top: 1rem;
-}
-.project-links .btn {
-  background: #18BC9C;
-  color: #fff;
-  padding: 0.5rem 1rem;
-  border-radius: 5px;
-  font-weight: 600;
-  transition: background 0.3s ease;
-}
-.project-links .btn:hover {
-  background: #1ABC9C;
-}
-
-/* (rest of your CSS remains the same from the previous file) */
-
